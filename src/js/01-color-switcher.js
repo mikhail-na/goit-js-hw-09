@@ -10,12 +10,12 @@ let timerId = null;
 function onStart() {
   timerId = setInterval(getBackgroundColor, 1000);
   dataBtnStartEl.disabled = true;
-  dataBtnStartEl.disabled = false;
+  dataBtnStopEl.disabled = false;
 }
 
 function onStop() {
   clearInterval(timerId);
-  dataBtnStopEl.disabled = false;
+  dataBtnStartEl.disabled = false;
   dataBtnStopEl.disabled = true;
 }
 
